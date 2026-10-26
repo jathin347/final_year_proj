@@ -41,7 +41,7 @@ class ClaimExtractor:
 
     async def _extract_with_gemini(self, text: str, headline: Optional[str] = None) -> List[ExtractedClaim]:
         """Calls Gemini API using standard REST endpoint with JSON schema prompt."""
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.gemini_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key={self.gemini_key}"
         
         prompt = f"""
 You are a factual claim extraction system for a real-time fake news detector.
@@ -78,7 +78,7 @@ Respond ONLY with a valid JSON array of objects with the following schema:
             }
         }
         
-        async with httpx.AsyncClient(timeout=12.0) as client:
+        async with httpx.AsyncClient(timeout=5.0) as client:
             resp = await client.post(url, json=payload)
             if resp.status_code != 200:
                 raise Exception(f"Gemini HTTP {resp.status_code}: {resp.text[:200]}")
@@ -223,15 +223,17 @@ Respond ONLY with a valid JSON array of objects with the following schema:
         return "General"
 
     def _build_search_query(self, text: str, entities: List[str]) -> str:
-        """Constructs concise 4-7 word search query for fact-checking APIs."""
+        """Constructs concise 2-4 word keyword query optimized for fact-checking APIs."""
         if entities:
-            query = " ".join(entities[:3])
-            # Add key assertion words
-            action_words = re.findall(r'\b[a-zA-Z]{5,}\b', text)
-            for w in action_words:
-                if w.lower() not in [e.lower() for e in entities] and len(query.split()) < 7:
-                    query += f" {w}"
-            return query.strip()
+            # Use top entities
+            return " ".join(entities[:3])
         
-        words = [w for w in text.split() if len(w) > 3][:6]
-        return " ".join(words)
+        # Filter stopwords and short tokens to isolate core subjects
+        from backend.app.utils.text_processing import tokenize_words
+        salient_words = tokenize_words(text)
+        if salient_words:
+            # Filter low-information filler words
+            filtered = [w for w in salient_words if w not in ("drinking", "eating", "cures", "curing", "cure", "said", "says", "claim", "claims", "people")]
+            return " ".join((filtered if filtered else salient_words)[:3])
+        
+        return " ".join([w for w in text.split() if len(w) > 3][:3])

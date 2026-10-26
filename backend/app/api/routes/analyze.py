@@ -138,11 +138,10 @@ async def analyze_news_item(
     
     search_queries = []
     if claims:
-        for c in claims[:3]: # Limit to top 3 claims to avoid rate limits
-            if c.search_queries:
-                search_queries.append(c.search_queries[0])
-            else:
-                search_queries.append(c.claim_text)
+        for c in claims[:3]: # Limit to top 3 claims
+            for q in c.search_queries[:2]:
+                if q and q not in search_queries:
+                    search_queries.append(q)
     elif extracted_headline:
         search_queries.append(extracted_headline)
 

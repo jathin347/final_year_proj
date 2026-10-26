@@ -54,6 +54,15 @@ class FactCheckService:
                 data = response.json()
                 raw_claims = data.get("claims", [])
                 
+                # If no claims matched and query has more than 2 words, retry with top 2 salient keywords
+                if not raw_claims and len(query.split()) > 2:
+                    from backend.app.utils.text_processing import tokenize_words
+                    keywords = tokenize_words(query)
+                    if len(keywords) >= 2:
+                        concise_query = " ".join(keywords[:2])
+                        if concise_query != query:
+                            return await self.search_claims(concise_query, language_code)
+
                 results: List[FactCheckItem] = []
                 for claim in raw_claims:
                     original_claim = claim.get("text", "")

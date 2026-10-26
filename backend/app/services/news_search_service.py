@@ -19,7 +19,7 @@ class NewsSearchService:
     """
     GDELT_API_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
 
-    def __init__(self, timeout_seconds: float = 10.0):
+    def __init__(self, timeout_seconds: float = 4.0):
         self.timeout = timeout_seconds
 
     async def search_news(self, query: str, max_records: int = 10) -> List[NewsArticleItem]:
@@ -29,14 +29,13 @@ class NewsSearchService:
         clean_query = query.strip()
         retrieval_time = datetime.now(timezone.utc).isoformat()
         
-        # Build GDELT query with English filter and recent timeframe
-        # GDELT syntax: query with quotes or keywords
-        encoded_query = f'"{clean_query}"' if len(clean_query.split()) <= 4 else clean_query
+        # Build GDELT query with keywords
+        encoded_query = f'"{clean_query}"' if len(clean_query.split()) <= 3 else clean_query
         
         params = {
             "query": encoded_query,
             "mode": "artlist",
-            "maxrecords": str(min(max_records, 20)),
+            "maxrecords": str(min(max_records, 15)),
             "format": "json",
             "sort": "DateDesc"
         }
@@ -46,12 +45,13 @@ class NewsSearchService:
             async with httpx.AsyncClient(timeout=self.timeout) as client:
                 resp = await client.get(self.GDELT_API_URL, params=params)
                 
+                # Check for rate limiting
+                if resp.status_code == 429:
+                    logger.info(f"GDELT returned 429 (rate limited). Preserving pipeline without news articles.")
+                    return []
+
                 # GDELT occasionally returns empty body or plain text if no matches found
                 if resp.status_code != 200 or not resp.text.strip():
-                    logger.info(f"GDELT returned HTTP {resp.status_code} for query '{query}'")
-                    # Try a relaxed search with top keywords if strict search yielded nothing
-                    if '"' in encoded_query:
-                        return await self.search_news(clean_query.replace('"', ''), max_records=max_records)
                     return []
 
                 # Handle GDELT plain text HTML error responses gracefully
