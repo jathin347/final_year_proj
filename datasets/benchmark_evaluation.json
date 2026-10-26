@@ -1,0 +1,74 @@
+[
+  {
+    "id": "eval_01",
+    "headline": "WHO declares end to COVID-19 as a global health emergency",
+    "text": "The World Health Organization said Friday that Covid-19 no longer qualifies as a global health emergency, a major step toward the end of the pandemic.",
+    "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/who-end-covid-emergency-2023-05-05/",
+    "expected_verdict": "Supported by available evidence",
+    "domain": "reuters.com",
+    "has_image": false
+  },
+  {
+    "id": "eval_02",
+    "headline": "Drinking industrial bleach completely cures viral infections within 24 hours",
+    "text": "SHOCKING TRUTH: Mainstream media and doctors hate this one secret cure! Miracle mineral solution eliminates all viruses instantly.",
+    "url": "https://miracle-cures-online.xyz/bleach-cure",
+    "expected_verdict": "Contradicted by available evidence",
+    "domain": "miracle-cures-online.xyz",
+    "has_image": false
+  },
+  {
+    "id": "eval_03",
+    "headline": "NASA confirms five-mile asteroid will obliterate Earth next Tuesday",
+    "text": "BOMBSHELL REPORT: Astronomers are in panic as massive planet-killer asteroid heads directly for collision. Governments are hiding the truth!",
+    "url": "https://worldnewsdailyreport.com/asteroid-strike",
+    "expected_verdict": "Contradicted by available evidence",
+    "domain": "worldnewsdailyreport.com",
+    "has_image": false
+  },
+  {
+    "id": "eval_04",
+    "headline": "Congress votes to pass national highway infrastructure funding bill",
+    "text": "Lawmakers in Washington approved the bipartisan transportation and road maintenance package following Senate negotiations.",
+    "url": "https://apnews.com/article/infrastructure-bill-vote",
+    "expected_verdict": "Supported by available evidence",
+    "domain": "apnews.com",
+    "has_image": false
+  },
+  {
+    "id": "eval_05",
+    "headline": "Secret government agency introduces ban on all outdoor grilling in rural Ohio",
+    "text": "You won't believe what they just signed! Rural Ohio residents are furious after new environmental restrictions prohibit backyard barbecues.",
+    "url": "https://conspiracy-daily.info/ohio-grill-ban",
+    "expected_verdict": "Insufficient evidence",
+    "domain": "conspiracy-daily.info",
+    "has_image": false
+  },
+  {
+    "id": "eval_06",
+    "headline": "European Central Bank holds benchmark interest rates steady after inflation report",
+    "text": "According to official announcements from Frankfurt, European central bankers maintained borrowing costs following quarterly economic metrics.",
+    "url": "https://www.ft.com/content/ecb-rate-hold",
+    "expected_verdict": "Supported by available evidence",
+    "domain": "ft.com",
+    "has_image": false
+  },
+  {
+    "id": "eval_07",
+    "headline": "Scientists discover live dinosaur herd living underground in Antarctica",
+    "text": "Mind-blowing discovery exposed! Satellite radar penetrates Antarctic ice sheet to reveal prehistoric ecosystem hidden for millions of years.",
+    "url": "https://theonion.com/antarctica-dinosaurs",
+    "expected_verdict": "Misleading or missing context",
+    "domain": "theonion.com",
+    "has_image": false
+  },
+  {
+    "id": "eval_08",
+    "headline": "Local Springfield bakery wins annual regional pastry championship",
+    "text": "The small family-owned bakery downtown received highest honors from the county trade association during Saturday's fair.",
+    "url": null,
+    "expected_verdict": "Insufficient evidence",
+    "domain": null,
+    "has_image": false
+  }
+]

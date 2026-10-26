@@ -1,0 +1,74 @@
+{
+  "benchmark_file": "datasets/benchmark_evaluation.json",
+  "sample_count": 8,
+  "exact_verdict_accuracy_pct": 25.0,
+  "appropriate_abstention_count": 2,
+  "unsupported_verdict_rate_pct": 0.0,
+  "mean_latency_ms": 0.23,
+  "detailed_results": [
+    {
+      "id": "eval_01",
+      "headline": "WHO declares end to COVID-19 as a global health emergency...",
+      "expected": "Supported by available evidence",
+      "predicted": "Insufficient evidence",
+      "match": false,
+      "latency_ms": 1.07
+    },
+    {
+      "id": "eval_02",
+      "headline": "Drinking industrial bleach completely cures viral infections...",
+      "expected": "Contradicted by available evidence",
+      "predicted": "Insufficient evidence",
+      "match": false,
+      "latency_ms": 0.14
+    },
+    {
+      "id": "eval_03",
+      "headline": "NASA confirms five-mile asteroid will obliterate Earth next ...",
+      "expected": "Contradicted by available evidence",
+      "predicted": "Misleading or missing context",
+      "match": false,
+      "latency_ms": 0.12
+    },
+    {
+      "id": "eval_04",
+      "headline": "Congress votes to pass national highway infrastructure fundi...",
+      "expected": "Supported by available evidence",
+      "predicted": "Insufficient evidence",
+      "match": false,
+      "latency_ms": 0.09
+    },
+    {
+      "id": "eval_05",
+      "headline": "Secret government agency introduces ban on all outdoor grill...",
+      "expected": "Insufficient evidence",
+      "predicted": "Insufficient evidence",
+      "match": true,
+      "latency_ms": 0.11
+    },
+    {
+      "id": "eval_06",
+      "headline": "European Central Bank holds benchmark interest rates steady ...",
+      "expected": "Supported by available evidence",
+      "predicted": "Insufficient evidence",
+      "match": false,
+      "latency_ms": 0.11
+    },
+    {
+      "id": "eval_07",
+      "headline": "Scientists discover live dinosaur herd living underground in...",
+      "expected": "Misleading or missing context",
+      "predicted": "Insufficient evidence",
+      "match": false,
+      "latency_ms": 0.1
+    },
+    {
+      "id": "eval_08",
+      "headline": "Local Springfield bakery wins annual regional pastry champio...",
+      "expected": "Insufficient evidence",
+      "predicted": "Insufficient evidence",
+      "match": true,
+      "latency_ms": 0.08
+    }
+  ]
+}
