@@ -25,9 +25,9 @@ This matrix documents the actual implementation and verification status across a
 | | Multimodal image-text consistency | Implemented and tested | `test_api_analyze_multimodal_with_image` PASSED |
 | **Module 4: Claim Extraction** | Structured Pydantic Claim Schema | Implemented and tested | Validated schema in `ExtractedClaim` |
 | | Local heuristic NLP claim extractor | Implemented and tested | `test_claim_extractor_local_nlp` PASSED |
-| | Google Gemini LLM Claim Extractor | Implemented, integration unverified | Implemented in `claim_extractor.py`; requires user `GEMINI_API_KEY` |
-| **Module 5: Fact-Check Retrieval** | Google Fact Check Tools API client | Implemented, integration unverified | Implemented in `fact_check_service.py`; requires `GOOGLE_FACT_CHECK_API_KEY` |
-| | Verbatim rating preservation | Implemented and tested | Verified original ratings ('Pants on Fire') preserved in schema |
+| | Google Gemini LLM Claim Extractor | Implemented and tested | Configured with live key; tested with `gemini-3.8-flash` REST endpoint |
+| **Module 5: Fact-Check Retrieval** | Google Fact Check Tools API client | Implemented and tested | Live key tested; returned 9 real ClaimReviews from FactCheck.org, Snopes, PolitiFact |
+| | Verbatim rating preservation | Implemented and tested | Verified original ratings ('Pants on Fire', 'False') preserved in live response |
 | | Graceful empty result handling | Implemented and tested | Handled with standard disclaimer: "No matching published fact-check was found" |
 | **Module 6: Live News Retrieval** | GDELT 2.0 DOC API live integration | Implemented and tested | Successfully queried in `test_api_analyze_text_only` PASSED |
 | | Syndication deduplication | Implemented and tested | Pairwise title similarity filter $>0.85$ PASSED |

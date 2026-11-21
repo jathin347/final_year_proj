@@ -2,7 +2,7 @@ import time
 from typing import List, Dict, Any, Tuple
 from backend.app.api.schemas.claims import ExtractedClaim
 from backend.app.api.schemas.evidence import FactCheckItem, NewsArticleItem
-from backend.app.utils.text_processing import calculate_cosine_similarity
+from backend.app.utils.text_processing import calculate_cosine_similarity, tokenize_words
 
 class EvidenceAssessor:
     """
@@ -30,10 +30,25 @@ class EvidenceAssessor:
             explanations = []
 
             # 1. Evaluate against Fact Checks
+            GENERIC_TOPIC_WORDS = {
+                "covid", "covid19", "coronavirus", "virus", "health", "people", "said", "says",
+                "claims", "world", "government", "president", "biden", "trump", "administration",
+                "official", "officials", "state", "national", "department", "united", "states",
+                "agency", "policy", "report", "reports", "organization", "pandemic"
+            }
+            tokens_claim = set(tokenize_words(claim.claim_text))
+
             for fc in fact_checks:
                 sim = calculate_cosine_similarity(claim.claim_text, fc.claim_reviewed)
-                # If similarity is significant or entities match
-                if sim > 0.25 or any(ent.lower() in fc.claim_reviewed.lower() for ent in claim.named_entities if len(ent) > 3):
+                tokens_fc = set(tokenize_words(fc.claim_reviewed))
+                specific_overlap = (tokens_claim & tokens_fc) - GENERIC_TOPIC_WORDS
+
+                # Require high cosine similarity or moderate similarity with specific non-generic topic overlap
+                is_relevant_match = (sim >= 0.45) or (
+                    sim >= 0.30 and len(specific_overlap) >= 2 and any(len(w) >= 5 for w in specific_overlap)
+                )
+
+                if is_relevant_match:
                     if fc.normalized_verdict == "FALSE":
                         contradicting_ids.append(fc.id)
                         explanations.append(

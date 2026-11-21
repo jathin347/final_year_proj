@@ -32,9 +32,21 @@ class DecisionFusionEngine:
         rules_applied = []
         
         # 1. Quantify evidence components
-        fc_false_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "FALSE")
-        fc_true_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "TRUE")
-        fc_mixed_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "MIXED")
+        is_assessed_by_pipeline = any(c.verification_status != "UNVERIFIED" for c in claims)
+        if is_assessed_by_pipeline:
+            matched_contradicting_fc_ids = set()
+            matched_supporting_fc_ids = set()
+            for c in claims:
+                matched_supporting_fc_ids.update(c.supporting_evidence_ids)
+                matched_contradicting_fc_ids.update(c.contradicting_evidence_ids)
+            
+            fc_false_count = sum(1 for fc in fact_checks if fc.id in matched_contradicting_fc_ids and fc.normalized_verdict in ("FALSE", "MIXED"))
+            fc_true_count = sum(1 for fc in fact_checks if fc.id in matched_supporting_fc_ids and fc.normalized_verdict == "TRUE")
+            fc_mixed_count = sum(1 for fc in fact_checks if fc.id in matched_contradicting_fc_ids and fc.normalized_verdict == "MIXED")
+        else:
+            fc_false_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "FALSE")
+            fc_true_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "TRUE")
+            fc_mixed_count = sum(1 for fc in fact_checks if fc.normalized_verdict == "MIXED")
         
         supporting_news = sum(1 for a in news_articles if a.stance == "supporting" and not a.is_syndicated_duplicate)
         contradicting_news = sum(1 for a in news_articles if a.stance == "contradicting")
@@ -165,6 +177,31 @@ class DecisionFusionEngine:
                 contradicting_evidence_count=total_contradicting,
                 fact_check_count=len(fact_checks),
                 evidence_coverage=coverage,
+                decision_rules_applied=rules_applied
+            )
+
+        # Rule 6b: Verified High-Credibility Primary Publisher Corroboration
+        if (
+            source_report.overall_score is not None 
+            and source_report.overall_score >= 70.0 
+            and total_contradicting == 0 
+            and text_analysis.prediction in ("Credible / Objective Phrasing", "Neutral / Mixed Stylometric Signals")
+        ):
+            rules_applied.append(
+                f"Rule 6b (Verified Primary Publisher Corroboration): Published by accredited news outlet '{source_report.domain}' with objective journalistic phrasing and zero conflicting reports."
+            )
+            return DecisionFusionReport(
+                final_assessment="Supported by available evidence",
+                explanation=(
+                    f"Published by verified high-credibility news outlet '{source_report.publisher_name or source_report.domain}' "
+                    f"(Credibility Score: {source_report.overall_score}/100) with clear editorial attribution. "
+                    "No contradicting fact-check reviews or conflicting reports were identified."
+                ),
+                uncertainty_level="Moderate",
+                supporting_evidence_count=max(1, total_supporting),
+                contradicting_evidence_count=0,
+                fact_check_count=len(fact_checks),
+                evidence_coverage="Moderate" if coverage == "None" else coverage,
                 decision_rules_applied=rules_applied
             )
 

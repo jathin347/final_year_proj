@@ -1,0 +1,597 @@
+[
+  {
+    "scenario": "Article A (Supported Factual Claim)",
+    "headline": "WHO declares end to COVID-19 as a global health emergency",
+    "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/who-end-covid-emergency-2023-05-05/",
+    "response": {
+      "id": "7922b4c7-29f3-4da3-b139-1afb0d7d1d87",
+      "headline": "WHO declares end to COVID-19 as a global health emergency",
+      "article_url": "https://www.reuters.com/business/healthcare-pharmaceuticals/who-end-covid-emergency-2023-05-05/",
+      "publisher": "Reuters.com",
+      "domain": "reuters.com",
+      "author": null,
+      "published_date": null,
+      "article_summary": "The World Health Organization said Friday that Covid-19 no longer qualifies as a global health emergency, a major step toward the end of the pandemic that has killed more than 6.9 million people.",
+      "final_assessment": "Supported by available evidence",
+      "assessment_explanation": "Published by verified high-credibility news outlet 'Reuters.com' (Credibility Score: 72.9/100) with clear editorial attribution. No contradicting fact-check reviews or conflicting reports were identified.",
+      "uncertainty_level": "Moderate",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "claim_text": "WHO declares end to COVID-19 as a global health emergency",
+          "importance": "HIGH",
+          "category": "Health",
+          "named_entities": [
+            "COVID",
+            "WHO"
+          ],
+          "relevant_dates": [],
+          "relevant_locations": [],
+          "search_queries": [
+            "COVID WHO",
+            "WHO declares end to COVID-19 as a global health emergency"
+          ],
+          "verification_status": "INSUFFICIENT",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [],
+          "explanation": "No authoritative fact-checks or directly matching news reports were retrieved for this claim."
+        },
+        {
+          "claim_id": "c2",
+          "claim_text": "The World Health Organization said Friday that Covid-19 no longer qualifies as a global health emergency, a major step toward the end of the pandemic that has killed more than 6.9 million people.",
+          "importance": "MEDIUM",
+          "category": "Health",
+          "named_entities": [
+            "The World Health Organization"
+          ],
+          "relevant_dates": [],
+          "relevant_locations": [],
+          "search_queries": [
+            "The World Health Organization"
+          ],
+          "verification_status": "INSUFFICIENT",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [],
+          "explanation": "No authoritative fact-checks or directly matching news reports were retrieved for this claim."
+        }
+      ],
+      "fact_checks": [
+        {
+          "id": "fc_997ba921",
+          "claim_reviewed": "The World Health Organisation has declared the Covid-19 pandemic over.",
+          "fact_checker_publisher": "Full Fact",
+          "publisher_site": "fullfact.org",
+          "review_title": "The WHO has not declared the Covid-19 pandemic over \u2013 Full Fact",
+          "review_url": "https://fullfact.org/health/who-covid-pandemic-over/",
+          "publication_date": "2023-05-12T00:00:00Z",
+          "original_rating": "It has not. The pandemic has been downgraded from the highest alert level and is no longer considered a public health emergency of international concern. But the WHO says the pandemic is ongoing and remains a global health risk.",
+          "normalized_verdict": "UNPROVEN",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:17.098397+00:00"
+        },
+        {
+          "id": "fc_9caeb27d",
+          "claim_reviewed": "The World Health Organisation (WHO) has announced that the Covid-19 pandemic is officially over.",
+          "fact_checker_publisher": "Full Fact",
+          "publisher_site": "fullfact.org",
+          "review_title": "Steve Barclay wrong to claim the WHO has announced the Covid-19 ...",
+          "review_url": "https://fullfact.org/health/steve-barclay-covid-who-pandemic/",
+          "publication_date": "2023-06-19T00:00:00Z",
+          "original_rating": "This is not correct. The WHO has downgraded the Covid-19 pandemic from the highest alert level, so it is no longer considered a public health emergency of international concern. But the WHO says the pandemic is ongoing and Covid-19 remains a global health risk.",
+          "normalized_verdict": "TRUE",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:17.098397+00:00"
+        },
+        {
+          "id": "fc_93371334",
+          "claim_reviewed": "The World Health Organisation has declared the Covid-19 pandemic over.",
+          "fact_checker_publisher": "Full Fact",
+          "publisher_site": "fullfact.org",
+          "review_title": "The WHO has not declared the Covid-19 pandemic over \u2013 Full Fact",
+          "review_url": "https://fullfact.org/health/who-covid-pandemic-over/",
+          "publication_date": "2023-05-12T00:00:00Z",
+          "original_rating": "It has not. The pandemic has been downgraded from the highest alert level and is no longer considered a public health emergency of international concern. But the WHO says the pandemic is ongoing and remains a global health risk.",
+          "normalized_verdict": "UNPROVEN",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:17.517969+00:00"
+        },
+        {
+          "id": "fc_7ddbc1ff",
+          "claim_reviewed": "\"US To Sign Over Sovereignty To W.H.O.\u201d",
+          "fact_checker_publisher": "FactCheck.org",
+          "publisher_site": "factcheck.org",
+          "review_title": "WHO 'Pandemic Treaty' Draft Reaffirms Nations\u2019 Sovereignty to ...",
+          "review_url": "https://www.factcheck.org/2023/03/scicheck-who-pandemic-treaty-draft-reaffirms-nations-sovereignty-to-dictate-health-policy/",
+          "publication_date": null,
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2023-02-27T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:17.517969+00:00"
+        },
+        {
+          "id": "fc_f7a215d7",
+          "claim_reviewed": "\"US To Sign Over Sovereignty To W.H.O.\u201d",
+          "fact_checker_publisher": "FactCheck.org",
+          "publisher_site": "factcheck.org",
+          "review_title": "WHO 'Pandemic Treaty' Draft Reaffirms Nations\u2019 Sovereignty to ...",
+          "review_url": "https://www.factcheck.org/2023/03/scicheck-who-pandemic-treaty-draft-reaffirms-nations-sovereignty-to-dictate-health-policy/",
+          "publication_date": null,
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2023-02-27T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:18.136429+00:00"
+        },
+        {
+          "id": "fc_a5dcb2e3",
+          "claim_reviewed": "The Biden administration \u201cis bringing amendments that would propose that all nations of the Earth cede their sovereignty over national health care decisions to the WHO.\u201d",
+          "fact_checker_publisher": "FactCheck.org",
+          "publisher_site": "factcheck.org",
+          "review_title": "\u2018WHO Has No Authority to Dictate U.S. Health Policy\u2019",
+          "review_url": "https://www.factcheck.org/2022/05/scicheck-who-has-no-authority-to-dictate-u-s-health-policy/",
+          "publication_date": null,
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2022-05-09T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:18.136429+00:00"
+        },
+        {
+          "id": "fc_2f011a34",
+          "claim_reviewed": "A legally-binding World Health Organization \u201cpandemic treaty\u201d will give the organization the authority to control U.S. policies during a pandemic, including those on vaccines, lockdowns, school closures and more.",
+          "fact_checker_publisher": "AP News",
+          "publisher_site": "apnews.com",
+          "review_title": "WHO 'pandemic treaty' draft doesn't sign over US sovereignty",
+          "review_url": "https://apnews.com/article/fact-check-world-health-organization-pandemic-treaty-212446302001",
+          "publication_date": null,
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2023-02-24T19:45:21Z",
+          "retrieval_timestamp": "2026-10-26T16:15:18.136429+00:00"
+        },
+        {
+          "id": "fc_fde4f7e5",
+          "claim_reviewed": "Tanzania kicks out the WHO?",
+          "fact_checker_publisher": "AFP Fact Check",
+          "publisher_site": "factcheck.afp.com",
+          "review_title": "The World Health Organization has not been kicked out of Tanzania",
+          "review_url": "https://factcheck.afp.com/world-health-organization-has-not-been-kicked-out-tanzania",
+          "publication_date": "2020-08-21T09:57:00Z",
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2020-05-21T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:18.136429+00:00"
+        }
+      ],
+      "news_articles": [],
+      "source_credibility": {
+        "domain": "reuters.com",
+        "publisher_name": "Reuters.com",
+        "overall_score": 72.9,
+        "assessment_status": "Assessed",
+        "factors": [
+          {
+            "factor_name": "Domain Track Record",
+            "score": 96.0,
+            "weight": 0.4,
+            "description": "Domain 'reuters.com' has an established record with recognized editorial oversight or fact-checking accreditations.",
+            "status": "Observed"
+          },
+          {
+            "factor_name": "Domain Integrity & TLD",
+            "score": 85.0,
+            "weight": 0.25,
+            "description": "Verified high-integrity domain registration for major recognized news organization.",
+            "status": "Observed"
+          },
+          {
+            "factor_name": "Author Attribution",
+            "score": 40.0,
+            "weight": 0.2,
+            "description": "No specific author byline detected in extracted metadata.",
+            "status": "Unobserved"
+          },
+          {
+            "factor_name": "Publisher Transparency",
+            "score": 35.0,
+            "weight": 0.15,
+            "description": "Publisher identity could not be verified from page metadata.",
+            "status": "Unobserved"
+          }
+        ],
+        "missing_signals": [
+          "Missing explicit author attribution / byline",
+          "Missing clear publisher identification"
+        ],
+        "disclaimer": "Heuristic source assessment score. Does not represent statistical proof of truth of any individual claim."
+      },
+      "text_analysis": {
+        "model_name": "Veritas-Stylistic-Ensemble",
+        "model_version": "1.2.0",
+        "prediction": "Neutral / Mixed Stylometric Signals",
+        "confidence": 0.506,
+        "stylometric_signals": {
+          "word_count": 43,
+          "all_caps_word_ratio": 0.0233,
+          "excessive_punctuation_count": 0,
+          "clickbait_detected": false,
+          "clickbait_patterns_found": [],
+          "attribution_density": 0.0,
+          "sensationalism_index": 0.093
+        },
+        "key_attribution_tokens": [],
+        "inference_time_ms": 0.96,
+        "limitations": "Classifier evaluates linguistic and stylistic cues; it does not replace external evidence verification."
+      },
+      "image_analysis": {
+        "has_image": false,
+        "image_format": null,
+        "image_dimensions": null,
+        "image_text_relevance_score": null,
+        "visual_context_summary": "No image was provided with this article submission.",
+        "flags": [],
+        "inference_time_ms": 0.0,
+        "limitations": "Image-text similarity evaluates visual relevance; it does not detect deepfakes or establish photographic authenticity."
+      },
+      "decision_fusion": {
+        "final_assessment": "Supported by available evidence",
+        "explanation": "Published by verified high-credibility news outlet 'Reuters.com' (Credibility Score: 72.9/100) with clear editorial attribution. No contradicting fact-check reviews or conflicting reports were identified.",
+        "uncertainty_level": "Moderate",
+        "supporting_evidence_count": 1,
+        "contradicting_evidence_count": 0,
+        "fact_check_count": 8,
+        "evidence_coverage": "Robust",
+        "decision_rules_applied": [
+          "Rule 6b (Verified Primary Publisher Corroboration): Published by accredited news outlet 'reuters.com' with objective journalistic phrasing and zero conflicting reports."
+        ]
+      },
+      "status": "COMPLETED",
+      "provider_status": {
+        "article_extractor": "FAILED: Website returned HTTP error 401 (HTTP Forbidden). The website may be paywalled or blocking access. Please provide the text manually.",
+        "image_analyzer": "NO_IMAGE_PROVIDED",
+        "text_model": "SUCCESS",
+        "claim_extractor": "GEMINI_API",
+        "google_fact_check": "ACTIVE",
+        "gdelt_news": "ACTIVE",
+        "source_credibility": "Assessed"
+      },
+      "latency_breakdown_ms": {
+        "article_extraction_ms": 390.32,
+        "image_analysis_ms": 0.02,
+        "text_model_ms": 0.99,
+        "claim_extraction_ms": 367.76,
+        "evidence_retrieval_ms": 12906.91,
+        "claim_matching_ms": 0.86,
+        "source_assessment_ms": 0.41,
+        "decision_fusion_ms": 0.07
+      },
+      "total_latency_ms": 13667.39,
+      "retrieval_timestamp": "2026-10-26T16:15:30.006554+00:00",
+      "created_at": "2026-10-26T16:15:30.013596"
+    },
+    "client_measured_latency_ms": 13736.08
+  },
+  {
+    "scenario": "Article B (Contradicted Claim with Published Fact-Checks)",
+    "headline": "Drinking bleach cures coronavirus infections",
+    "url": null,
+    "response": {
+      "id": "a660977a-8c8a-4d03-9b9c-b2f48788a48a",
+      "headline": "Drinking bleach cures coronavirus infections",
+      "article_url": null,
+      "publisher": "Unspecified Source",
+      "domain": null,
+      "author": null,
+      "published_date": null,
+      "article_summary": "Social media posts claim drinking household disinfectant or chlorine solution cures coronavirus and kills all viral pathogens.",
+      "final_assessment": "Contradicted by available evidence",
+      "assessment_explanation": "Directly contradicted by 2 professional fact-checking review(s). Independent fact-checkers have previously reviewed and debunked this assertion.",
+      "uncertainty_level": "Low",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "claim_text": "Drinking bleach cures coronavirus infections",
+          "importance": "HIGH",
+          "category": "Health",
+          "named_entities": [],
+          "relevant_dates": [],
+          "relevant_locations": [],
+          "search_queries": [
+            "bleach coronavirus infections",
+            "Drinking bleach cures coronavirus infections"
+          ],
+          "verification_status": "CONTRADICTED",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [
+            "fc_0163ff69",
+            "fc_de6f67ab"
+          ],
+          "explanation": "Contradicted by published fact-check by PolitiFact rated 'Pants on Fire'; Contradicted by published fact-check by PolitiFact rated 'Pants on Fire'"
+        }
+      ],
+      "fact_checks": [
+        {
+          "id": "fc_4ec7ad26",
+          "claim_reviewed": "\"MMS (chlorine dioxide), can be very effective in both preventing and eradicating the coronavirus.\"",
+          "fact_checker_publisher": "FactCheck.org",
+          "publisher_site": "factcheck.org",
+          "review_title": "Fake Coronavirus Cures, Part 1: MMS is Industrial Bleach",
+          "review_url": "https://www.factcheck.org/2020/02/fake-coronavirus-cures-part-1-mms-is-industrial-bleach/",
+          "publication_date": null,
+          "original_rating": "False",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2020-01-27T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_5b3fa9ff",
+          "claim_reviewed": "Said of his comments about injections of disinfectant: \"I was asking a question sarcastically to reporters like you, just to see what would happen.\"",
+          "fact_checker_publisher": "FactCheck.org",
+          "publisher_site": "factcheck.org",
+          "review_title": "The White House Spins Trump's Disinfectant Remarks",
+          "review_url": "https://www.factcheck.org/2020/04/the-white-house-spins-trumps-disinfectant-remarks/",
+          "publication_date": null,
+          "original_rating": "You Be the Judge",
+          "normalized_verdict": "UNPROVEN",
+          "claim_date": "2020-04-24T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_01e70e9b",
+          "claim_reviewed": "Former U.S. President Donald Trump once suggested that people inject bleach or other disinfectants into their bodies to treat COVID-19.",
+          "fact_checker_publisher": "Snopes",
+          "publisher_site": "snopes.com",
+          "review_title": "Trump Didn't Tell People to 'Inject Bleach' for COVID-19. But Here's ...",
+          "review_url": "https://www.snopes.com/fact-check/trump-inject-bleach-covid-19/",
+          "publication_date": "2024-07-19T16:52:33Z",
+          "original_rating": "Mostly False",
+          "normalized_verdict": "FALSE",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_0163ff69",
+          "claim_reviewed": "Says drinking a bleach solution will prevent you from getting the coronavirus.",
+          "fact_checker_publisher": "PolitiFact",
+          "publisher_site": "politifact.com",
+          "review_title": "No, drinking bleach will not ward off coronavirus \u2013 PolitiFact",
+          "review_url": "https://politifact.com/factchecks/2020/jan/30/tweets/no-drinking-bleach-will-not-ward-coronavirus/",
+          "publication_date": null,
+          "original_rating": "Pants on Fire",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2020-01-28T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_c3e453b0",
+          "claim_reviewed": "Former U.S. President Donald Trump once suggested people inject bleach or other disinfectants into their bodies to treat COVID-19.",
+          "fact_checker_publisher": "Snopes.com",
+          "publisher_site": "snopes.com",
+          "review_title": "Trump Didn't Say People Should 'Inject Bleach' To Tackle COVID-19 ...",
+          "review_url": "https://www.snopes.com/fact-check/trump-bleach-covid-19/",
+          "publication_date": "2024-08-23T19:00:03Z",
+          "original_rating": "Mostly False",
+          "normalized_verdict": "FALSE",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_28b76310",
+          "claim_reviewed": "Former U.S. President Donald Trump once suggested people inject bleach or other disinfectants into their bodies to treat COVID-19.",
+          "fact_checker_publisher": "Snopes.com",
+          "publisher_site": "snopes.com",
+          "review_title": "Trump Didn't Advise People to 'Inject Bleach' to Treat COVID-19. But ...",
+          "review_url": "https://www.snopes.com/fact-check/donald-trump-inject-bleach-covid/",
+          "publication_date": "2024-07-24T16:33:44Z",
+          "original_rating": "Mostly False",
+          "normalized_verdict": "FALSE",
+          "claim_date": null,
+          "retrieval_timestamp": "2026-10-26T16:15:31.034963+00:00"
+        },
+        {
+          "id": "fc_de6f67ab",
+          "claim_reviewed": "Says drinking a bleach solution will prevent you from getting the coronavirus.",
+          "fact_checker_publisher": "PolitiFact",
+          "publisher_site": "politifact.com",
+          "review_title": "No, drinking bleach will not ward off coronavirus \u2013 PolitiFact",
+          "review_url": "https://politifact.com/factchecks/2020/jan/30/tweets/no-drinking-bleach-will-not-ward-coronavirus/",
+          "publication_date": null,
+          "original_rating": "Pants on Fire",
+          "normalized_verdict": "FALSE",
+          "claim_date": "2020-01-28T00:00:00Z",
+          "retrieval_timestamp": "2026-10-26T16:15:31.543160+00:00"
+        }
+      ],
+      "news_articles": [],
+      "source_credibility": {
+        "domain": null,
+        "publisher_name": "Unspecified Source",
+        "overall_score": null,
+        "assessment_status": "Assessment unavailable",
+        "factors": [],
+        "missing_signals": [
+          "No source URL provided",
+          "Domain registration and reputation cannot be evaluated",
+          "Publisher attribution relies on self-reported input"
+        ],
+        "disclaimer": "Heuristic source assessment score. Does not represent statistical proof of truth of any individual claim."
+      },
+      "text_analysis": {
+        "model_name": "Veritas-Stylistic-Ensemble",
+        "model_version": "1.2.0",
+        "prediction": "Neutral / Mixed Stylometric Signals",
+        "confidence": 0.5,
+        "stylometric_signals": {
+          "word_count": 22,
+          "all_caps_word_ratio": 0.0,
+          "excessive_punctuation_count": 0,
+          "clickbait_detected": false,
+          "clickbait_patterns_found": [],
+          "attribution_density": 0.0,
+          "sensationalism_index": 0.0
+        },
+        "key_attribution_tokens": [],
+        "inference_time_ms": 0.08,
+        "limitations": "Classifier evaluates linguistic and stylistic cues; it does not replace external evidence verification."
+      },
+      "image_analysis": {
+        "has_image": false,
+        "image_format": null,
+        "image_dimensions": null,
+        "image_text_relevance_score": null,
+        "visual_context_summary": "No image was provided with this article submission.",
+        "flags": [],
+        "inference_time_ms": 0.0,
+        "limitations": "Image-text similarity evaluates visual relevance; it does not detect deepfakes or establish photographic authenticity."
+      },
+      "decision_fusion": {
+        "final_assessment": "Contradicted by available evidence",
+        "explanation": "Directly contradicted by 2 professional fact-checking review(s). Independent fact-checkers have previously reviewed and debunked this assertion.",
+        "uncertainty_level": "Low",
+        "supporting_evidence_count": 0,
+        "contradicting_evidence_count": 2,
+        "fact_check_count": 7,
+        "evidence_coverage": "Robust",
+        "decision_rules_applied": [
+          "Rule 1 (Authoritative Fact-Check Refutation): 2 published fact-check review(s) rated the statement false or misleading."
+        ]
+      },
+      "status": "COMPLETED",
+      "provider_status": {
+        "image_analyzer": "NO_IMAGE_PROVIDED",
+        "text_model": "SUCCESS",
+        "claim_extractor": "GEMINI_API",
+        "google_fact_check": "ACTIVE",
+        "gdelt_news": "ACTIVE",
+        "source_credibility": "Assessment unavailable"
+      },
+      "latency_breakdown_ms": {
+        "article_extraction_ms": 0.0,
+        "image_analysis_ms": 0.01,
+        "text_model_ms": 0.09,
+        "claim_extraction_ms": 374.98,
+        "evidence_retrieval_ms": 8582.55,
+        "claim_matching_ms": 0.54,
+        "source_assessment_ms": 0.06,
+        "decision_fusion_ms": 0.07
+      },
+      "total_latency_ms": 8958.35,
+      "retrieval_timestamp": "2026-10-26T16:15:38.997168+00:00",
+      "created_at": "2026-10-26T16:15:38.998870"
+    },
+    "client_measured_latency_ms": 8985.35
+  },
+  {
+    "scenario": "Article C (Claim with Insufficient Evidence)",
+    "headline": "Oakridge community pottery workshop wins county artisan prize",
+    "url": null,
+    "response": {
+      "id": "2efb7b61-af3a-453d-b20d-740b1b45aa18",
+      "headline": "Oakridge community pottery workshop wins county artisan prize",
+      "article_url": null,
+      "publisher": "Unspecified Source",
+      "domain": null,
+      "author": null,
+      "published_date": null,
+      "article_summary": "The local pottery workshop on 4th street was awarded a ribbon at the annual county arts gathering according to the neighborhood newsletter.",
+      "final_assessment": "Insufficient evidence",
+      "assessment_explanation": "No matching published fact-check reviews or authoritative independent news reports were retrieved. The absence of evidence does not establish whether the assertion is true or false.",
+      "uncertainty_level": "High",
+      "claims": [
+        {
+          "claim_id": "c1",
+          "claim_text": "Oakridge community pottery workshop wins county artisan prize",
+          "importance": "HIGH",
+          "category": "International",
+          "named_entities": [],
+          "relevant_dates": [],
+          "relevant_locations": [],
+          "search_queries": [
+            "oakridge community pottery",
+            "Oakridge community pottery workshop wins county artisan prize"
+          ],
+          "verification_status": "INSUFFICIENT",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [],
+          "explanation": "No authoritative fact-checks or directly matching news reports were retrieved for this claim."
+        }
+      ],
+      "fact_checks": [],
+      "news_articles": [],
+      "source_credibility": {
+        "domain": null,
+        "publisher_name": "Unspecified Source",
+        "overall_score": null,
+        "assessment_status": "Assessment unavailable",
+        "factors": [],
+        "missing_signals": [
+          "No source URL provided",
+          "Domain registration and reputation cannot be evaluated",
+          "Publisher attribution relies on self-reported input"
+        ],
+        "disclaimer": "Heuristic source assessment score. Does not represent statistical proof of truth of any individual claim."
+      },
+      "text_analysis": {
+        "model_name": "Veritas-Stylistic-Ensemble",
+        "model_version": "1.2.0",
+        "prediction": "Neutral / Mixed Stylometric Signals",
+        "confidence": 0.562,
+        "stylometric_signals": {
+          "word_count": 30,
+          "all_caps_word_ratio": 0.0,
+          "excessive_punctuation_count": 0,
+          "clickbait_detected": false,
+          "clickbait_patterns_found": [],
+          "attribution_density": 1.0,
+          "sensationalism_index": 0.0
+        },
+        "key_attribution_tokens": [],
+        "inference_time_ms": 0.11,
+        "limitations": "Classifier evaluates linguistic and stylistic cues; it does not replace external evidence verification."
+      },
+      "image_analysis": {
+        "has_image": false,
+        "image_format": null,
+        "image_dimensions": null,
+        "image_text_relevance_score": null,
+        "visual_context_summary": "No image was provided with this article submission.",
+        "flags": [],
+        "inference_time_ms": 0.0,
+        "limitations": "Image-text similarity evaluates visual relevance; it does not detect deepfakes or establish photographic authenticity."
+      },
+      "decision_fusion": {
+        "final_assessment": "Insufficient evidence",
+        "explanation": "No matching published fact-check reviews or authoritative independent news reports were retrieved. The absence of evidence does not establish whether the assertion is true or false.",
+        "uncertainty_level": "High",
+        "supporting_evidence_count": 0,
+        "contradicting_evidence_count": 0,
+        "fact_check_count": 0,
+        "evidence_coverage": "None",
+        "decision_rules_applied": [
+          "Rule 8 (Default Insufficient Evidence): No published fact-checks or corroborating news reports retrieved."
+        ]
+      },
+      "status": "COMPLETED",
+      "provider_status": {
+        "image_analyzer": "NO_IMAGE_PROVIDED",
+        "text_model": "SUCCESS",
+        "claim_extractor": "GEMINI_API",
+        "google_fact_check": "ACTIVE",
+        "gdelt_news": "ACTIVE",
+        "source_credibility": "Assessment unavailable"
+      },
+      "latency_breakdown_ms": {
+        "article_extraction_ms": 0.0,
+        "image_analysis_ms": 0.01,
+        "text_model_ms": 0.11,
+        "claim_extraction_ms": 5019.84,
+        "evidence_retrieval_ms": 16078.41,
+        "claim_matching_ms": 0.06,
+        "source_assessment_ms": 0.05,
+        "decision_fusion_ms": 0.05
+      },
+      "total_latency_ms": 21098.6,
+      "retrieval_timestamp": "2026-10-26T16:16:00.127064+00:00",
+      "created_at": "2026-10-26T16:16:00.128407"
+    },
+    "client_measured_latency_ms": 21128.36
+  }
+]
